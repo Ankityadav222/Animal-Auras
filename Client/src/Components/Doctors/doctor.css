@@ -1,0 +1,229 @@
+/* General container styling */
+
+#doctors-near-you{
+  background-image: url('../../Components/Home/images/Doc.jpg'); 
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* max-width: "100%"; */
+  /* max-height: "100%"; */
+  /* color: #fff; */
+  /* text-align: center; */
+  /* position: relative; */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Another {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.Another h2 {
+  font-size: 2rem;
+  color: whitesmoke;
+  margin-bottom: 2rem;
+}
+
+/* Scrollable doctor images */
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 1rem 0;
+  justify-content: center;
+}
+
+.doc-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.doc-pic:hover {
+  transform: scale(1.1);
+}
+
+/* Clinic offer section */
+.offer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.left, .right {
+  flex: 1;
+  padding: 1rem;
+}
+
+.left h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.header-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* Form styling */
+.right form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+button {
+  padding: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Review section */
+.review {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: #fafafa;
+  border-radius: 10px;
+}
+
+.leftreview h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.rightreview {
+  text-align: center;
+}
+
+.review-item {
+  margin-top: 1rem;
+}
+
+.review-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Doctor card styling */
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.doctor-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+}
+
+.doctor-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.doctor-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.doctor-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.doctor-card button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.doctor-card button:hover {
+  background-color: #218838;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .offer {
+      flex-direction: column;
+  }
+
+  .review {
+      flex-direction: column;
+  }
+
+  .right, .left {
+      width: 100%;
+  }
+
+  .doctor-card {
+      width: 100%;
+  }
+}

@@ -1,0 +1,189 @@
+.dashboard {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.doctor-info, .treated-dogs, .cured-pets {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-info p, .treated-dogs p, .cured-pets p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+strong {
+  color: #333;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #555;
+}
+
+p.error {
+  color: red;
+  text-align: center;
+}
+
+.add-cured-pet {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-cured-pet form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-cured-pet input, .add-cured-pet textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-cured-pet button {
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-cured-pet button:hover {
+  background-color: #2980b9;
+}
+
+.cured-pets ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cured-pets li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cured-pets li:last-child {
+  border-bottom: none;
+}
+
+.cured-pets h2 {
+  color: #2c3e50;
+}
+
+.cured-pets p {
+  color: #555;
+}
+
+
+/* DoctorDashboard.css */
+
+/* Overall dashboard styling */
+.dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading styling */
+.dashboard h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Doctor info section */
+.doctor-info {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.doctor-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.doctor-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+/* Pets cured section */
+.pets-cured {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.pets-cured h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.pets-cured ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pets-cured li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.pets-cured li:last-child {
+  border-bottom: none;
+}
+
+.pets-cured p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
